@@ -125,7 +125,15 @@ function Home() {
                         {
                             editId ?
                                 <div className='flex justify-between'>
-                                    <button onClick={() => setEditId("")} className='border border-slate-500 px-5 py-2 rounded-2xl bg-slate-500 text-white'>
+                                    <button onClick={() => {
+                                        setEditId("")
+                                        setTask({
+                                            title: "",
+                                            description: "",
+                                            status: "pending",
+                                        })
+                                    }
+                                    } className='border border-slate-500 px-5 py-2 rounded-2xl bg-slate-500 text-white cursor-pointer'>
                                         Cancel
                                     </button>
                                     <button onClick={() => putEdit(editId, task)} className='border border-slate-500 px-5 py-2 rounded-2xl bg-slate-500 text-white'>
@@ -153,7 +161,7 @@ function Home() {
                                         <h1 className=''>{item.title}</h1>
                                     </div>
                                     <p className='text-slate-500'>{item.description}</p>
-                                    <div className="flex gap-5">
+                                    <div className="flex gap-5 max-md:flex-col">
                                         <span className='border border-slate-500 px-5 py-2 rounded-2xl bg-slate-500 text-white'>{item.status}</span>
                                         <button onClick={() => handleEdit(item?.id)} className='border border-slate-500 px-5 py-2 rounded-2xl bg-slate-500 text-white cursor-pointer'>Update</button>
                                         <button onClick={() => handleDelete(item.id)} className='border border-red-500 px-5 py-2 rounded-2xl bg-red-500 text-white cursor-pointer'>Delete</button>
