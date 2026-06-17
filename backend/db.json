@@ -1,11 +1,28 @@
 {
   "todos": [
-    
     {
-      "title": "jksadhfkjhdfasdfsd",
+      "title": "Cool task",
       "description": "dfsadfsdf",
-      "status": "pending",
+      "status": "inProgress",
       "id": "ShB40WtMU78"
+    },
+    {
+      "title": "buy ferrari",
+      "description": "buy la ferrari before 2032",
+      "status": "completed",
+      "id": "dsISTTMFYRI"
+    },
+    {
+      "title": "adsfdsf",
+      "description": "asdfsadf",
+      "status": "pending",
+      "id": "__7ebPLM8T0"
+    },
+    {
+      "title": "epic task",
+      "description": "epic description",
+      "status": "completed",
+      "id": "ulEiWOd4tVk"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
