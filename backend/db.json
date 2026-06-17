@@ -1,0 +1,12 @@
+{
+  "todos": [
+    
+    {
+      "title": "jksadhfkjhdfasdfsd",
+      "description": "dfsadfsdf",
+      "status": "pending",
+      "id": "ShB40WtMU78"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
