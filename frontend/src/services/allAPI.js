@@ -1,6 +1,6 @@
 import commonAPI from "./commonAPI"
 
-const serverURL = "http://localhost:3000"
+const serverURL = "https://react-todo-aado.onrender.com"
 
 //add task
 export const addTaskAPI = async (reqBody) => {
